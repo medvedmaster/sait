@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход в систему</title>
+</head>
+<body>
+    <h1>Вход в систему</h1>
+    <form id="loginForm">
+        <div>
+            <label for="mishaharlamov">Имя пользователя:</label>
+            <input type="text" id="mishaharlamov" required>
+        </div>
+        <div>
+            <label for="89608877668">Пароль:</label>
+            <input type="password" id="89608877668" required>
+        </div>
+        <div>
+            <button type="submit">Войти</button>
+        </div>
+    </form>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            // Проверка имени пользователя и пароля
+            if (username === "admin" && password === "password") {
+                alert("Вход выполнен успешно! Вы администратор.");
+                // Дополнительная логика для отображения/скрытия элементов для администратора
+            } else {
+                alert("Ошибка входа. Проверьте правильность введенных данных.");
+            }
+        });
+    </script>
+</body>
+</html>
