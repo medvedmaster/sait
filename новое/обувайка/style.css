@@ -25,7 +25,11 @@ border: 1px solid #000;
 position: absolute;
 border-radius: 15px;
 }
-
+#tw_8_1851620572 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
 
 .menu:hover {
 height: 150px;
@@ -34,7 +38,11 @@ height: 150px;
 .menu:hover .menu-label {
 display: none;
 }
-
+#myImage {
+  position: relative;
+  top: 20px;
+  left: 450px;
+}
 .menu-list {
 display: none;
 list-style-type: none;
