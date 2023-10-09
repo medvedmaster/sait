@@ -89,7 +89,7 @@ font-weight: bold;
 .content h1 {
 margin-bottom: 50px;
 }
-button {
+--button {
 animation: wiggle 2s linear infinite;
 }
 
@@ -189,3 +189,54 @@ cursor: pointer;
 
 input[type="submit"]:hover{
 background-color: blue;}
+/* Dark theme styles */
+.dark-theme {
+  background-color: #1f1f1f;
+  color: #f0f0f0;
+}
+
+/* Light theme styles */
+.light-theme {
+  background-color: #f0f0f0;
+  color: #1f1f1f;
+}
+#text {
+  font-weight: normal;
+}
+.rise-shake {
+  position: relative;
+  animation: rise-shake 1s linear infinite;
+}
+
+@keyframes rise-shake {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+#comment-form {
+  max-width: 30px;
+  margin: 20px;
+}
+
+#comment-input {
+  width: 20%;
+  height: 100px;
+  padding: 10px;
+}
+
+button[type="submit"] {
+  margin-top: 10px;
+  padding: 5px 10px;
+}
